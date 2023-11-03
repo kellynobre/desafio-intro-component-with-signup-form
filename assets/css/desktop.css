@@ -1,0 +1,148 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background: url("../images/bg-intro-desktop.png"), #ff7a7a;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin: 10rem auto;
+}
+
+#singup {
+  max-width: 1216px; /*padrão*/
+  max-height: 500px;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.conteudo {
+  color: white;
+  text-align: center;
+  padding: 1em;
+  width: 50%;
+  padding-right: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.conteudo h1 {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.login {
+  width: 50%;
+  padding: 1em;
+  text-align: center;
+  display: flex;
+  gap: 1.5em;
+  flex-direction: column;
+  /*flex-wrap: nowrap;*/
+}
+.inscricao {
+  box-shadow: 0px 0.45em 0px 0px #df6d6d;
+  background-color: #6055a5;
+  padding: 0.5em;
+  text-align: inherit;
+  color: white;
+  font-size: 0.8em;
+}
+.formulario {
+  box-shadow: 0px 0.45em 0px 0px #df6d6d;
+  background-color: white;
+  padding: 16px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.formulario input {
+  width: 100%;
+  height: 3em;
+  padding: 0 1em;
+  margin-top: 0.9em;
+  font-family: inherit;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 5px;
+  font-weight: 700;
+  color: hsl(249, 10%, 26%);
+}
+
+.error {
+  border: 2px solid #ff7a7a;
+  background: url("./assets/images/icon-error.svg") no-repeat;
+  background-position: 95% 50%;
+}
+.error-text {
+  font-size: 12px;
+  font-style: italic;
+  margin-left: auto;
+  margin-top: -15px;
+  margin-bottom: 20px;
+  color: hsl(0, 100%, 74%);
+}
+.success {
+  border: 2px solid hsl(154, 59%, 51%);
+}
+
+#submit {
+  box-shadow: 0px 4.8px 0px 0px #2fb179;
+  border: none;
+  border-radius: 4px;
+  background-color: #38cc8c;
+  text-transform: uppercase;
+  color: white;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  padding-top: 6px;
+  cursor: pointer;
+}
+
+.termos {
+  display: block;
+  margin-top: 16px;
+  padding: 8px;
+  font-size: 12px;
+  color: #b9b6d3;
+}
+.termos span {
+  color: #ff7a7a;
+  font-weight: bolder;
+}
+
+@media (max-width: 1024px) {
+  body {
+    background: url("../images/bg-intro-mobile.png"), #ff7a7a;
+    background-position: center;
+    background-repeat: repeat;
+    font-size: 1em;
+    font-family: "Poppins", sans-serif;
+  }
+  main {
+    padding: 2rem;
+  }
+  #singup {
+    width: 100%;
+    height: 100%;
+    max-height: 550px;
+    min-height: fit-content;
+    flex-direction: column;
+  }
+  .conteudo {
+    text-align: center;
+    padding: 1em;
+  }
+}
